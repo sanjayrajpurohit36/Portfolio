@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Resume</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+  <link href="css-circular-prog-bar.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+
+s
+</head>
+<style>
+    .bg-h{
+          padding: 80px 120px;
+          background-color:#001133;
+          width: 100%;
+          height: auto;
+          margin: 0px;
+          font: 400 15px Lato, sans-serif;
+          color:white;
+    }
+    .map-responsive{
+            overflow:hidden;
+            padding-bottom:56.25%;
+            position:relative;
+            height:0;
+    }
+
+    .map-responsive iframe{
+            left:0;
+            top:0;
+            height:100%;
+            width:100%;
+            position:absolute;
+    }
+    .right{
+            font-size:20px;
+            padding-top:10px;
+    } 
+    .navbar-header{
+            padding-top:10px; 
+    }
+    .home{
+            background-color:#161a21;
+            color:white;
+            font-size: 25px;
+            padding:50px;
+            padding-top: 100px;
+            margin-top:0%;
+            width:100%;
+    }
+
+    .Skills{
+            background: linear-gradient(to bottom, #ffffff 46%, #ff3300 103%);
+            width:100%;
+            color:white;
+    }
+    .progress-bar,.progress-bar-striped{
+            background-color: black;
+    } 
+
+    .intr{
+            background-color:#f0f5f5;
+            font-family:open_sansregular;
+            width:100%;
+            color:white;
+            font-size: 25px;
+            padding-top:60px;
+            padding-bottom:60px;
+            margin-top:0px;
+    }
+    .btnn{
+            padding: 10px;
+            font-size: 15px;
+            font-family:open_sansbold_italic ;
+            background-color:green;
+            margin-top: 25px;
+            margin-left: 25px;
+    } 
+    .navbar,.navbar-header{
+            padding-top:5px;
+            margin-bottom:15px; 
+            background-color: orangered;
+    }
+   
+
+    .bg-hobbies{
+            background-color: #eff5f5;
+            padding:70px;
+            margin-top:0px;
+            font:20px Montserrat, sans-serif; 
+    }
+   
+    .fa{
+            padding: 12px;
+            font-size: 25px;
+            text-align: left;
+            text-decoration: none;
+            margin: 2px 2px;
+            border-radius: 50%;
+    }
+
+    .fa:hover{
+            opacity: 0.7;
+    }
+
+    .fa-facebook{
+            background: #3B5998;
+            color: white;
+            padding-left:20px;
+            padding-right:20px; 
+    }
+
+    .fa-linkedin{
+            margin-left:5px; 
+            background: #007bb5;
+            color: white;
+            padding-left:16px;
+            padding-right:16px;
+    }
+    .fa-github{
+            margin-left:5px;
+            background: #ff6600;
+            color:white;
+            padding-left:18px;
+            padding-right:18px;
+    }
+    .slideanim {visibility:hidden;}
+    .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+    }   
+    .bg-f{
+            padding:30px;
+            color:white;
+            background-color: black;
+            width: 100%;
+            height: auto;
+            margin: 0px;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      } 
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+      @-webkit-keyframes slide {
+        0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      } 
+      100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btnn {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+    @media screen and (max-width: 480px) {
+      . {
+          font-size: 150px;
+        }
+    }       
+    .navbar-right li a, .navbar-right .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-right li a:hover, .navbar-right li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  
+</style>
+<body>
+  
+<div class="row">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+     <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+     </button>
+        <a class="navbar-brand" href="#Home" style="font-size: 40px" >Resume</a>     
+     </div> 
+     <div class="collapse navbar-collapse" id="myNavbar">
+     <ul class="nav navbar-nav navbar-right right">
+      <li><a class="right" href="#Home">Home</a></li>
+      <li><a href="#Skills">Skills</a></li>
+      <li><a href="#Education">Education</a></li>
+      <li><a href="#Hobbies">Hobbies</a></li>
+      <li><a href="#Contact">Contact</a></li>
+     </ul>
+  </div> 
+</nav><!--Navbar tag closed-->
+</div>
+<!-- Introduction --> 
+<div class="container container-fluid home" id="Home">
+  <div class="row">
+    <div class="col-sm-4">
+       <img src="sanjay.jpg" alt="Sanjay Rajpurohit" class="img-rounded img-responsive slideanim"> 
+    </div>      
+    <div class="col-sm-8" style="font-size:23px; font-family: "Lato", sans-serif;">
+      <ul>
+          <h1>SANJAY RAJPUROHIT</h1>
+          <h2>(CODER /DEVELOPER/ DESIGNER)</h2>  
+          <h3><b>DOB :</b> 21/Nov/1996</h3>
+          <h3><b>ADDRESS :</b> 3-Pa-16 Hiran Magri Sec:5 Udaipur(Raj.) Pin:313002</h3>
+         <br>
+        <a href="https://www.facebook.com/sanjay.rajpurohit.7" class="fa fa-facebook" style="color:white"></a>
+        <a href="https://www.linkedin.com/in/sanjay-rajpurohit-a29586111/" class="fa fa-linkedin"></a>
+        <a href="https://github.com/sanjayrajpurohit36" class="fa fa-github" aira-hidden="true" ><b style="font-size:28px color:white"></a>
+      </ul>  
+      <div class="btn">
+         <a href="https://drive.google.com/open?id=0B5biRifK7xRCVDZtSEQzRnVqNkU" target="_blank"><button type="button" class="btn btn-md btnn" style="color:white"><b style="font-size:18px">Download Resume</b></button></a>
+      </div> 
+    </div>
+  </div>    
+</div>
+
+<!-- Intro -->
+<div class="container container-fluid intr slideanim">
+  <div class="row">    
+    <div class="col-sm-12" style="color:black; font-size:23px; font-family: "Lato", sans-serif;">
+      <h2><p>I am currently pursuing B.Tech in Computer Science Engineering from Techno India NJR Institute of Technology, Udaipur. I am currently in the final year of my UG course. My interests are computer programming and web development. I have consistent academic credentials, adaptive to different challenging situations and interested in learning new technologies.</p></h2>
+    </div>
+  </div>    
+</div>
+
+<!--Skills -->
+<div class="container container-fluid Skills slideanim" id="Skills"><br>
+    <br><b><center><h1 style="color:black"><br><br>Skills<h1></b>
+      <!--Web Development -->  
+    <div class="row container">
+      <h2 style="color:orangered">Web Development</h2><hr><br>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">80% <strong> HTML</strong>
+        </div>
+      </div>
+  
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80% <strong> CSS</strong>
+        </div>
+      </div>
+    
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%">85% <strong> Boostrap</strong>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:75%">80% <strong> Javascript</strong>
+        </div>
+      </div>
+  
+    </div> <!--Programming Languages -->
+
+     <div class="row container slideanim">
+      <h2 style="color:orangered">Programming Languages</h2><hr><br>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:80%">80% <strong> C</strong>
+        </div>
+      </div>
+  
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">80% <strong> C++</strong>
+        </div>
+      </div>
+    
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:85%">85% <strong> PHP</strong>
+        </div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:70%">70% <strong> Python</strong>
+        </div>
+      </div>
+  
+    </center> <!--center tag started at the begining-->  
+    </div> <!--End of row container -->
+</div><!--End ofcontainer container-fluid Skills-->
+
+
+<!--------------Education---------------->
+<div class="container-fluid text-center slideanim slideanim" id="Education"><br><br><br><br>
+    <h1>EDUCATION</h1>
+  <div class="row">
+    <div class="col-sm-12">
+      <h2>Bachelor Degree – B.tech</h2>
+      <span class="label label-danger">Aug 2014 - Present</span>
+          <h4><p>I am currently pursuing B. Tech in Computer Science Engineering from Techno India NJR Institute of Technology, Udaipur.I am currently in the final year of my UG course from Rajasthan Technical University(RTU).</p></h4>
+      </div>
+      <div class="col-sm-12">
+        <h2>Senior Secondary</h2>
+        <span class="label label-danger">Apr 2013 - May 2014</span>
+        <h4><p>I did my Sr.Secondary from Kendriya Vidyalaya Eklinggarh Udaipur (Raj.) CBSE board in the year 2014.</p></h4>
+      </div>
+      <div class="col-sm-12">
+        <h2>Secondary</h2>
+        <span class="label label-danger">Apr 2011 - May 2012</span>
+        <h4><p>I did my Secondary from Kendriya Vidyalaya Eklinggarh Udaipur (Raj.) CBSE  board in the year 2012.</p></h4>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!--------------Hobbies-------------->
+<div id="Hobbies" class="container-fluid text-center bg-hobbies slideanim" ><br>
+  <h1 class="margin"><b>HOBBIES</h1>
+  <div class="row">
+    <div class="col-sm-3 text-center">
+      <h3>1. Learning New Technolgies</h3>
+    </div> 
+
+    <div class="col-sm-3 text-center">
+      <h3>2. Coding</h3>
+    </div> 
+ 
+    <div class="col-sm-3 text-center">
+      <h3>3. Watching Movies</h3>
+    </div> 
+
+    <div class="col-sm-3 text-center">
+      <h3>4. Dancing</h3>
+    </div>
+
+    <div class="col-sm-3 text-center">
+      <h3>5. Listening Music</h3>
+    </div>   
+
+    <div class="col-sm-3 text-center">
+      <h3>6. Playing Games(Lan Based,Online,Football)</h3>
+    </div> 
+ </div>
+</div> <!--bg-Hobbies -->
+
+<!-------------------Contact-------------->
+<div id="Contact" class="container-fluid text-center bg-h slideanim">
+  <h1>CONTACT</h1>
+  <div class="row">
+    <div class="col-sm-8" style="font-size:20px">
+       <span class="glyphicon glyphicon-home"></span>
+      3-Pa-16 Hiran Magri Sec:5, Udaipur(Raj.)<br><br>
+  
+      <span class="glyphicon glyphicon-phone"></span>
+      +91 9462678202<br><br>
+    </div> 
+    
+
+    <div class="col-sm-4 container slideanim">
+      <div class="map-responsive">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3628.8136103963307!2d73.72022511424994!3d24.561102363240597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3967ef68492ca6b7%3A0x32868780027316a8!2sManglam+Sangeet+Kala+Kendra!5e0!3m2!1sen!2sin!4v1508399876807" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>    
+      </div>
+    </div>
+
+  </div>
+</div>
+<!---------footer------------>
+<footer class="container-fluid text-center bg-f slideanim">
+  <a href="#Home" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up slideanim"></span><br>sanjayrajpurohit36@gmail.com
+  </a>
+</footer>
+
+
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script> <!--For smooth animantion -->
+ 
+
+
+</body>
+</html>
